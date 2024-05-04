@@ -32,8 +32,3 @@ def return_body(req: Pims):
     print(req.word, sentence)
     return {"data": sentence}
 
-@app.get("/pimprompt")
-def read_root():
-    return {"data": '''Welcome to Lesson 5 of Pimsleur Mandarin Chinese. Today, we will learn how to introduce yourself and ask someone's name. Let's begin!" Native Speaker: “你好。我的名字是张伟。” Instructor: "Repeat after me: 你好 - Hello." You: "你好." Instructor: "Now, 我的名字是 - My name is." You: "我的名字是." Instructor: "Let’s recall how to say 'thank you' which we learned in the last lesson." You: "谢谢." Instructor: "Imagine you are meeting someone for the first time. Respond
-            appropriately." Instructor as Other Person: "你好，你叫什么名字？" You: "你好，我的名字是[Your Name]." Instructor: "Today, you’ve learned how to introduce yourself and ask someone’s name in Mandarin. Goodbye, or as you say in Mandarin, 再见!'''}
-
